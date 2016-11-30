@@ -1,0 +1,81 @@
+html{
+	height: 100%;
+}
+
+body{
+	min-width: 700px;
+	max-width: 75%;
+	height: 100%;
+	background-color: blue;
+	margin: auto;
+}
+
+p{
+	font-size: 17pt;
+}
+
+h1{
+	color: black;
+	font-size: 20pt;
+}
+
+
+#pageHeader{
+	display: block;
+	text-align: center;
+	height: 125px;
+	background-color: grey;
+	margin: auto;
+}
+
+#address{
+	float: left;
+	display: block;
+	width: 24%;
+	height: 75px;
+	background-color:pink;
+}
+
+#logo{
+	float: left;
+	display: block;
+	width: 50%;
+	min-width: 200px;
+	height: 75px;
+	background-color:red;
+}
+
+#phone{
+	float: left;
+	display: block;
+	width: 24%;
+	height: 75px;
+	background-color: orange;
+}
+
+#linkBar{
+	font-size: 18pt;
+	float: left;
+	display: block;
+	width: 100%;
+	height: 50px;
+	background-color: green;
+}
+
+.link{
+	float: left;
+	height: 100%;
+	width: 20%;
+	margin-left: 2%;
+	margin-right: 2%;
+	display:block;
+	background-color: yellow;
+}
+
+#mainBody{
+	padding: 20px;
+	display: block;
+	height: 100%;
+	background-color: purple;
+
+}
