@@ -16,7 +16,7 @@ p{
 
 h1{
 	color: black;
-	font-size: 20pt;
+	font-size: 16pt;
 }
 
 
@@ -31,6 +31,8 @@ h1{
 #address{
 	float: left;
 	display: block;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 2em;
 	width: 24%;
 	height: 75px;
 	background-color:pink;
@@ -48,6 +50,8 @@ h1{
 #phone{
 	float: left;
 	display: block;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 2em;
 	width: 24%;
 	height: 75px;
 	background-color: orange;
