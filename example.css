@@ -6,7 +6,7 @@ body{
 	min-width: 700px;
 	max-width: 75%;
 	height: 100%;
-	background-color: #37373a; 
+	background-color: #303030; 
 	background-image: url("Backgrounds/debut_dark.png");
 	margin: auto;
 }
@@ -16,7 +16,7 @@ p{
 }
 
 h1{
-	color: black;
+	color: #f2d7cb;
 	font-size: 16pt;
 }
 
@@ -36,16 +36,29 @@ h1{
 	font-size: 2em;
 	width: 25%;
 	height: 75px;
-	background-color:pink;
+	background-color:#303030;
 }
 
-#logo{
+#logowrapper{
 	float: left;
 	display: block;
 	width: 50%;
 	min-width: 200px;
 	height: 75px;
-	background-color:red;
+	background-color: #303030;
+}
+
+#logo{
+	height: 100%;
+	width: 100%;
+	position: top;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("GameForceLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #phone{
@@ -55,7 +68,7 @@ h1{
 	font-size: 2em;
 	width: 25%;
 	height: 75px;
-	background-color: orange;
+	background-color: #303030;
 }
 
 #linkBar{
