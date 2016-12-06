@@ -3,7 +3,7 @@ html{
 }
 
 body{
-	min-width: 700px;
+	min-width: 750px;
 	max-width: 75%;
 	height: 100%;
 	background-color: #303030; 
@@ -20,7 +20,7 @@ h1{
 	font-size: 16pt;
 }
 
-h2 {
+h2{
 	color: #f2d7cb;
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	font-size: 40px;
@@ -38,6 +38,11 @@ hr{
    border: none;
    border-top: 1px solid #3d3d3d;
    border-bottom: 1px solid #3d3d3d;
+}
+
+td{
+	text-align: center;
+	font-size: 18pt;
 }
 
 
@@ -68,9 +73,10 @@ hr{
 	background-color: #303030;
 }
 
-#logo{
+.logo{
 	height: 100%;
 	width: 100%;
+	object-fit: contain;
 	position: top;
 }
 
@@ -93,14 +99,6 @@ hr{
 	background-color: #303030;
 }
 
-#about{
-	background-color:#303030; 
-	float: left;
-	display: block;
-	width: 100%;
-	height: 70px;
-}
-
 .button {
 	height: 100%;
 	width: 33.33333%;
@@ -115,10 +113,39 @@ hr{
     cursor: pointer;
 }
 
+#about{
+	background-color:#303030; 
+	float: left;
+	display: block;
+	width: 100%;
+	height: 70px;
+}
+
 #mainBody{
 	padding: 20px;
 	display: block;
 	height: 100%;
 	background-color: purple;
 
+}
+
+#consoles{
+	width: 100%;
+	display: table;
+	background-color: red;
+}
+
+#consolesButtons{
+	width: 20%;
+	height: 100%;
+	display: table-cell;
+	background-color: blue;
+}
+
+#consolesTable{
+	width: 60%;
+	height: 100%;
+	display: table-cell;
+	align-self: center;
+	background-color: green;
 }
