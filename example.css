@@ -72,13 +72,6 @@ hr{
 	height: 100%;
 	width: 100%;
 	position: top;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("GameForceLogo.png");
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 #phone{
@@ -92,7 +85,7 @@ hr{
 }
 
 #linkBar{
-	height: 70px;
+	height: 60px;
 	font-size: 18pt;
 	float: left;
 	display: block;
@@ -108,26 +101,17 @@ hr{
 	height: 70px;
 }
 
-.link{
-	float: left;
-	height: 60px;
-	width: 33.333%;
-	display:block;
-	background-color: #303030;
-}
-
 .button {
-	height: 60px;
-	width: 20%;
-    background-color: #555555;
+	height: 100%;
+	width: 33.33333%;
+    background-color: #444444;
     border: none;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    float: left;
+    display: block;
     font-size: 16px;
-    margin: 1px 30px;
     cursor: pointer;
 }
 
