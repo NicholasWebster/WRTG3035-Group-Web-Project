@@ -1,3 +1,10 @@
+//These are global parameters for quick setting
+font = '17pt Arial'
+
+//This can be a hex-code represented as a string.
+fontColor = 'white'
+
+
 function initialize()	{
 	// List of consoles that buttons will be created for.
 	var consoleList = [ "xBox/360/One","PlayStation 1/2/3/4", "NES and N64",
@@ -53,7 +60,8 @@ function generateButtonsFromList(list) {
 	for (i = 0; i < list.length; i++) {
 
 		// Create the button named with the string in that list position and position it.
-		consoleButton(list[i], workingXCoord, workingYCoord);
+		// **NOTE: The relatedStyleNumber is the same as the index number of it's list item.
+		consoleButton(list[i], workingXCoord, workingYCoord, i);
 
 		// Updates the working coords for the next button placement:
 		if(workingCountDown > 1) {
@@ -72,7 +80,7 @@ function generateButtonsFromList(list) {
 
 // This function is still in progress.
 function loadConsoleStyle(styleNumber)	{
-
+	alert("Change To Console Style #: " + styleNumber);
 }
 
 // This function is still in progress.
@@ -86,13 +94,36 @@ function scoreCounterIncrament() {
 }
 
 // Creates a button object with the given name at the given x/y coordinates.
-function consoleButton(_name, _xLoc, _yLoc){
+function consoleButton(_name, _xLoc, _yLoc, relatedStyle){
+
+	// Makes a container in which to build the button out of multiple elements.
+	this.cjsObject = new createjs.Container();
+
+	// Creates the text for the button.
 	this.name = _name;
-	this.cjsObject = new createjs.Text(_name, "17pt Arial", "White");
-	this.cjsObject.textAlign = 'center';
+	this.cjsText = new createjs.Text(_name, font, fontColor);
+	this.cjsText.textAlign = 'center';
+
+	// Creates the actual button. (This can simply be colored the same as the background if it looks better)
+	// The button makes it easier to click, otherwise you'd have to click exactly on top of the text.
+	this.cjsButton = new createjs.Shape();
+	this.cjsButton.graphics.setStrokeStyle(4,"round", "round").beginStroke("white").beginFill("black").drawRect(-5,-5,this.cjsText.getMeasuredWidth() + 20, this.cjsText.getMeasuredHeight() + 10);
+	this.cjsButton.x = (this.cjsText.getMeasuredWidth() + 10)/-2
+
+	// Adds the text and buttons to the object building the button.
+	this.cjsObject.addChild(this.cjsButton);
+	this.cjsObject.addChild(this.cjsText);
+
+	// Positions the button object.
 	this.cjsObject.x = _xLoc;
 	this.cjsObject.y = _yLoc;
 
+	// Adds a click event listener to the button object to handle users clicking the button.
+	this.cjsObject.addEventListener("click", function(evt) {
+		loadConsoleStyle(relatedStyle);
+	});
+
+	// Adds the button object to the stage.
 	canvasStage.addChild(this.cjsObject);
 }
 
