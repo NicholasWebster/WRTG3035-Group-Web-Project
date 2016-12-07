@@ -141,9 +141,8 @@ td{
 	display: table-cell;
 }
 
-#consolesTable{
-	width: 60%;
-	height: 100%;
-	display: table-cell;
-	align-self: center;
+#consolesCanvas{
+	width: 100%;
+	height: 300px;
+	display: block;
 }

@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- loads the JavaScript files, the first is a library used for drawing in the canvas and using the sounds. -->
+	    <script src="Scripts/jquery-3.1.1.min.js"></script>
+	    <script src="Scripts/createjs-2015.11.26.min.js"></script>
+   	    <script src="Scripts/Main.js"></script>
 		<link rel="stylesheet" type="text/css" href="example.css">
 		<!-- <link rel="stylesheet" type="text/css" href="Alt Designs/gamecube.css"> -->
 		<link rel="stylesheet" type="text/css" href="Alt Designs/nes.css">
 		<title>Game Force Boulder</title>
 	</head>
-	<body>
+	<body onload="initialize()">
 		<div id="pageHeader">
 			<div id="infobar">
 				<div id="address">
@@ -31,40 +35,7 @@
 		<div id="mainBody">
 			<hr />
 			<div id="consoles">
-				<div id="consolesButtons">
-					
-				</div>
-				<div id="consolesTable">
-					<table width=100%>
-						<tr>
-							<td>Console</td>
-							<td>Console</td>
-							<td>Console</td>
-							<td>Console</td>
-						</tr>
-						<tr>
-							<td>Console</td>
-							<td>Console</td>
-							<td>Console</td>
-							<td>Console</td>
-						</tr>
-						<tr>
-							<td>Console</td>
-							<td>Console</td>
-							<td>Console</td>
-							<td>Console</td>
-						</tr>
-						<tr>
-							<td>Console</td>
-							<td>Console</td>
-							<td>Console</td>
-							<td>Console</td>
-						</tr>
-					</table>
-				</div>
-				<div id="consolesButtons">
-					
-				</div>
+				<canvas id="consolesCanvas"></canvas>
 			</div>
 			<hr />
 
