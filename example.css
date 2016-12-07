@@ -16,12 +16,12 @@ p{
 }
 
 h1{
-	color: #f2d7cb;
+	color: #FEFEFE;
 	font-size: 16pt;
 }
 
 h2{
-	color: #f2d7cb;
+	color: #FEFEFE;
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 500;
@@ -49,8 +49,8 @@ td{
 #pageHeader{
 	display: block;
 	text-align: center;
-	height: 125px;
-	background-color: grey;
+	overflow-y: auto;
+	background-color: #303030;
 	margin: auto;
 }
 
@@ -61,7 +61,6 @@ td{
 	font-size: 2em;
 	width: 25%;
 	height: 75px;
-	background-color:#303030;
 }
 
 #logowrapper{
@@ -70,7 +69,6 @@ td{
 	width: 50%;
 	min-width: 200px;
 	height: 75px;
-	background-color: #303030;
 }
 
 .logo{
@@ -87,7 +85,6 @@ td{
 	font-size: 2em;
 	width: 25%;
 	height: 75px;
-	background-color: #303030;
 }
 
 #linkBar{
@@ -96,7 +93,6 @@ td{
 	float: left;
 	display: block;
 	width: 100%;
-	background-color: #303030;
 }
 
 .button {
@@ -114,7 +110,6 @@ td{
 }
 
 #about{
-	background-color:#303030; 
 	float: left;
 	display: block;
 	width: 100%;
@@ -125,21 +120,19 @@ td{
 	padding: 20px;
 	display: block;
 	height: 100%;
-	background-color: purple;
+	background-color: #606060;
 
 }
 
 #consoles{
 	width: 100%;
 	display: table;
-	background-color: red;
 }
 
 #consolesButtons{
 	width: 20%;
 	height: 100%;
 	display: table-cell;
-	background-color: blue;
 }
 
 #consolesTable{
@@ -147,5 +140,4 @@ td{
 	height: 100%;
 	display: table-cell;
 	align-self: center;
-	background-color: green;
 }

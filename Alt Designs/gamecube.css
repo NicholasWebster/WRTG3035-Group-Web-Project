@@ -1,0 +1,25 @@
+body{
+	background-color: #000000;
+	background-image: none;
+}
+
+h1{
+	color: #111111;
+}
+
+h2{
+	color: #111111;
+}
+
+#mainBody{
+	background-color: #775995;
+}
+
+#pageHeader{
+	background-color: #C8C3BE;
+}
+
+#logowrapper{
+	background-color: #000000;
+	border-radius: 30px;
+}
