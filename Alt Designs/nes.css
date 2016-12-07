@@ -1,0 +1,37 @@
+body{
+	background-color: #CCCBC7;
+	background-image: none;
+}
+
+h1, h2, p{
+	color: #AA3E3E;
+}
+
+#mainBody{
+	background-color: #383838;
+}
+
+#pageHeader{
+	background-color: #CCCBC7;
+}
+
+#infobar{
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	background-color: #828282;
+}
+
+#linkBar{
+	background-color: #CCCBC7;
+}
+
+.button{
+	border-radius: 60px;
+	background-color: #1A1A1A;
+}
+
+#about{
+	border-top-right-radius: 40px;
+	border-top-left-radius: 40px;
+	background-color: #828282;
+}
